@@ -41,12 +41,58 @@ healthcare-dashboard/
 ├── Healthcare report.xlsx    # Sample healthcare dataset
 ├── requirements.txt          # Python package dependencies
 └── README.md                 # Project documentation and setup guide
-🚀 Local Setup & Installation1. Clone the Repositorygit clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
-2. Create and Activate a Virtual Environment (Optional but Recommended)Windows:python -m venv venv
-.\venv\Scripts\activate
-macOS / Linux:python3 -m venv venv
-source venv/bin/activate
-3. Install Dependenciespip install -r requirements.txt
-4. Run the Streamlit Applicationstreamlit run healthcare_dashboard.py
-The app will open automatically in your browser at http://localhost:8501.📊 Dataset SchemaThe dashboard expects an Excel spreadsheet (Healthcare report.xlsx) containing the following primary columns:Column NameTypeDescriptionNameStringPatient full nameAgeNumericAge in yearsGenderStringPatient gender (Male, Female, etc.)Blood TypeStringPatient blood group (A+, O-, etc.)Medical ConditionStringDiagnosed primary conditionDate of AdmissionDateAdmission date (DD-MM-YYYY)Discharge DateDateDischarge date (DD-MM-YYYY)Admission TypeStringCategory (Emergency, Elective, Urgent)Insurance ProviderStringHealth insurance company nameBilling AmountNumericTotal hospital charges per admission🌐 Deployment (Streamlit Community Cloud)Fork or push this repository to GitHub.Sign in to Streamlit Community Cloud with your GitHub account.Click New app, select this repository, set the branch to main, and enter healthcare_dashboard.py as the main file path.Click Deploy!📄 License & AttributionThis project is open-source and intended for analytical and educational use. Sample datasets contain mock, de-identified patient data compliant with healthcare privacy guidelines.
+```
+
+---
+
+## 🚀 Local Setup & Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/samarthamle/healthcare-dashboard.git
+cd healthcare-dashboard
+```
+
+### 2. Create and Activate a Virtual Environment
+
+* **Windows:**
+  ```powershell
+  python -m venv venv
+  .\venv\Scripts\activate
+  ```
+* **macOS / Linux:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit Application
+```bash
+streamlit run healthcare_dashboard.py
+```
+
+The app will open automatically in your browser at `http://localhost:8501`.
+
+---
+
+## 📊 Dataset Schema
+
+The dashboard expects an Excel spreadsheet (`Healthcare report.xlsx`) containing the following columns:
+
+| Column Name | Expected Format | Description |
+| :--- | :--- | :--- |
+| `Name` | String | Patient full name |
+| `Age` | Integer | Patient age in years |
+| `Gender` | String | Gender category |
+| `Blood Type` | String | ABO/Rh blood group |
+| `Medical Condition` | String | Primary diagnosed medical condition |
+| `Date of Admission` | Date (`DD-MM-YYYY`) | Hospital admission date |
+| `Discharge Date` | Date (`DD-MM-YYYY`) | Hospital discharge date |
+| `Admission Type` | String | `Emergency`, `Elective`, or `Urgent` |
+| `Insurance Provider`| String | Associated health insurer |
+| `Billing Amount` | Numeric / Float | Total billed cost |
