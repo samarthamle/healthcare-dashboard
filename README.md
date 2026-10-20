@@ -1,5 +1,42 @@
-🏥 Healthcare Intelligence DashboardAn interactive, dark-themed healthcare analytics web application built with Streamlit, Plotly, and Pandas. The dashboard provides real-time insights into patient demographics, admission metrics, and hospital financial performance.🌟 Key FeaturesExecutive KPI Metrics: Real-time tracking of total billing, total admissions, average billing per admission, and average length of stay (ALOS) with period-over-period delta comparisons.Dynamic Multi-Level Filtering:Admission date range selector with automatic prior-period benchmarking.Multi-select filters for Medical Conditions, Admission Types, Insurance Providers, Gender, and Age Groups.Patient Intelligence:Demographics breakdown (Age Group distribution, Gender ratio, and Condition prevalence).Blood type percentage distribution charts.Emergency admission rate and unique patient counts.Financial Intelligence:Revenue breakdown by medical condition.Revenue distribution across insurance providers.Comprehensive revenue statistics (Total, Average, Min, and Max billing amounts).Interactive Raw Data Explorer: Filtered table view with sortable columns and record count indicators.Modern Cyberpunk UI: Custom glassmorphism dark theme with animated radial gradients, responsive metric cards, and custom scrollbars.🛠️ Tech Stack & DependenciesLanguage: Python 3.9+Web Framework: StreamlitData Manipulation: PandasData Visualizations: Plotly ExpressExcel Parser: openpyxl📂 Project Structurehealthcare-dashboard/
-│
+# 🏥 Healthcare Intelligence Dashboard
+
+An interactive, dark-themed healthcare analytics web application built with **Streamlit**, **Plotly**, and **Pandas**. The dashboard provides real-time insights into patient demographics, admission metrics, and hospital financial performance.
+
+---
+
+## 🌟 Key Features
+
+* **Executive KPI Metrics:** Real-time tracking of total billing, total admissions, average billing per admission, and average length of stay (ALOS) with period-over-period delta comparisons.
+* **Dynamic Multi-Level Filtering:**
+  * Admission date range selector with automatic prior-period benchmarking.
+  * Multi-select filters for Medical Conditions, Admission Types, Insurance Providers, Gender, and Age Groups.
+* **Patient Intelligence:**
+  * Demographics breakdown (Age Group distribution, Gender ratio, and Condition prevalence).
+  * Blood type percentage distribution charts.
+  * Emergency admission rate and unique patient counts.
+* **Financial Intelligence:**
+  * Revenue breakdown by medical condition.
+  * Revenue distribution across insurance providers.
+  * Comprehensive revenue statistics (Total, Average, Min, and Max billing amounts).
+* **Interactive Raw Data Explorer:** Filtered table view with sortable columns and record count indicators.
+* **Modern Cyberpunk UI:** Custom glassmorphism dark theme with animated radial gradients, responsive metric cards, and custom scrollbars.
+
+---
+
+## 🛠 Tech Stack & Dependencies
+
+* **Language:** Python 3.9+
+* **Web Framework:** [Streamlit](https://streamlit.io/)
+* **Data Manipulation:** [Pandas](https://pandas.pydata.org/)
+* **Data Visualizations:** [Plotly Express](https://plotly.com/python/)
+* **Excel Engine:** [openpyxl](https://openpyxl.readthedocs.io/)
+
+---
+
+## 📁 Project Structure
+
+```text
+healthcare-dashboard/
 ├── healthcare_dashboard.py   # Main Streamlit dashboard application
 ├── Healthcare report.xlsx    # Sample healthcare dataset
 ├── requirements.txt          # Python package dependencies
