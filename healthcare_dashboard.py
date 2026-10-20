@@ -180,7 +180,7 @@ p, label, span, li {
 [data-testid="stMetricValue"] {
     color: #f8fafc !important;
     font-family: 'Syne', sans-serif !important;
-    font-size: 2rem !important;
+    font-size: 1.55rem !important;
     font-weight: 800 !important;
 }
 
